@@ -1,0 +1,325 @@
+
+.spinner-overlay {
+  opacity: 0;
+  animation: 3s fade;
+  position: absolute;
+  z-index: 545555;
+  visibility: hidden;
+}
+.spinner-overlay #spinner {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  border-width: 10px !important;
+  animation: 1s spinner linear infinite;
+  left: 50%;
+  border-bottom-color: rgb(29, 29, 29) !important;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(365deg);
+  }
+}
+@keyframes fade {
+  0% {
+visibility: visible;    opacity: 1;
+  }
+  60% {
+visibility: visible;    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ======================================================================== */
+body{
+  font-family: Montserrat, sans-serif !important;
+}
+header {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, .65)), url(../img/bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: top center;
+}
+header .social-icon a {
+  display: inline-block;
+}
+
+header .social-icon div {
+ background-color: rgba(16, 16, 16, 0.5);
+display: flex;
+height: 40px;
+width: 40px;
+justify-content: center;
+align-items: center;
+}
+.navbar-toggler{
+  border:none !important;
+}
+.navbar button{
+box-shadow: none !important;
+}
+.navbar .navbar-brand{
+font-weight: 900 !important;
+font-size: 20px !important;}
+.navbar .nav-link{
+width: fit-content;}
+nav .container a {
+  padding-left: 0 !important;
+  position: relative;
+  font-size: 14px !important;
+}
+nav .container a:hover {
+  color: #fff;
+}
+
+
+nav .navbar-nav a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  transition: 0.5s;
+
+}
+nav .navbar-nav a:hover::after,
+nav .navbar-nav .active::after {
+  width: 100%;
+}
+
+a{
+text-decoration: none !important ;
+color: #000 !important;
+}
+/* ================== typing effect============== */
+@keyframes typing {
+  0%, 27% { content: "L"; }
+  1%, 26% { content: "La"; }
+  2%, 25% { content: "Larr"; }
+  3%, 23% { content: "Larry"; }
+  4%, 22% { content: "Larry "; }
+  5%, 21% { content: "Larry D"; }
+  6%, 20% { content: "Larry Da"; }
+  7%, 19% { content: "Larry Dan"; }
+  9%, 18% { content: "Larry Dani"; }
+  10%, 17% { content: "Larry Danie"; }
+  11%, 16% { content: "Larry Daniel"; }
+  12%, 15% { content: "Larry Daniels"; }
+
+  29%, 64% { content: ""; }
+  30%, 62% { content: "D"; }
+  32%, 60% { content: "De"; }
+  34%, 58% { content: "Des"; }
+  36%, 56% { content: "Desi"; }
+  38%, 54% { content: "Desig "; }
+  40%, 52% { content: "Design"; }
+  42%, 50% { content: "Designe"; }
+  44%, 48% { content: "Designer"; }
+
+  68%, 100% { content: ""; }
+  70%, 99% { content: "D"; }
+  72%, 98% { content: "De"; }
+  74%, 97% { content: "Dev"; }
+  76%, 96% { content: "Deve"; }
+  78%, 94% { content: "Devel "; }
+  80%, 92% { content: "Develo"; }
+  82%, 90% { content: "Develop"; }
+  84%, 88% { content: "Developer"; }
+  }
+  .typewriter::before {
+    content: "";
+    animation: typing 10s infinite linear;
+    font-weight: normal !important;
+  }
+  
+  .typewriter::after {
+    content: "|";
+    animation: blink 0.5s linear infinite;
+  }
+  
+  /* =================================================================== */
+  #about .progress{
+    box-shadow:-2px 3px 7px 0px inset rgb(78 78 78 / 19%) !important; 
+ }
+
+  #max-bold{
+    font-weight: 800 !important;
+  }
+
+  .btn-dark:hover{
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+
+.about-img::before{
+  content: "";
+  background-image: url(../img/dots.png);
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 70%;
+  height: 80%;
+
+}
+  #about button{
+  font-size: 14px;
+}
+
+.card span{
+  background-color: #eee;
+  transition: 0.5s;
+    padding: 0.5em;
+}
+.card span i {
+  display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.card:hover span,#our-blog .col-lg-4:hover .icon {
+  background-color: #000;
+  color: #eee;
+}
+
+/* ============================================ */
+.heading-component h2 {
+font-weight: 900 !important;
+z-index: 55
+;
+}
+.heading-component h2::before {
+content: '';
+position: absolute;
+background-image: url(../img/dots.png);
+left: 50%;
+bottom: -10px !important;
+transform: translate(-50%);
+bottom: 0;
+width: 100%;
+height: 40px;
+z-index: -1;
+}
+
+
+.overlay svg{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  background: #111;
+  color: #eee;}
+
+ 
+  #portfolio .portfolio-card .overlay{
+    transition: 0.5s !important;
+    border-color:  transparent;
+    top: 10px;
+
+  }
+  .portfolio-card:hover .overlay{
+    opacity: 0.75 !important;
+    top: 0 !important;
+  }
+.portfolio-card .mt-5,  .portfolio-card .overlay-inner{
+    transition: 0.5s;  }
+  .portfolio-card:hover .mt-5{
+    margin-top: 10px !important;
+  }
+  .portfolio-card:hover .overlay-inner{
+    opacity: 1 !important;
+  }
+  .portfolio-card:hover .overlay-inner i{
+    transition: 0.5s;
+    width: 20px !important ;
+    height: 20px !important; 
+    color: #fff;
+    padding: 2px;
+  }
+  .overlay-inner .mt-5 div:hover{
+    background-color: #fff !important;
+    cursor: pointer;
+    color: #000 !important;
+  }
+  .overlay-inner .mt-5 div:hover i{
+    color: #000 !important;
+  }
+
+  #work .active{
+    background-color: transparent!important;
+  }
+
+#work .nav .nav-link::after{
+  content: "";
+  width: 0;
+  background-color: #000;
+}
+#work .nav .active::after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.carousel-item img{
+width: 100px;
+}
+.carousel-indicators button{
+  margin-top: 20px !important;
+  width: 10px !important;
+  height: 10px !important;
+border-radius: 50%;
+}
+
+.uor-work .display-6{
+  font-weight: 800;
+  margin: 20px;
+  display: inline-block;
+}
+/* blog */
+#our-blog .main .image img {
+  transition: 0.5s;
+}
+#our-blog .main:hover .image img {
+  transform: scale(1.1);
+}
+/* simulate slider */
+@media screen and (max-width: 577px){
+  .d-sm-none{
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1000px){
+  #our-blog .container{
+    padding: 0 7rem;}
+    
+    
+}
+
+
+#contact-us .icon{
+  background-color: #eee;
+  transition: background-color 0.5s;
+    padding: 1.2em;
+}
+#contact-us .icon:hover {
+  background-color: #000;
+  color: #fff;
+}
+#contact-us .icon i{
+font-size:20px;
+}
